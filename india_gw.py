@@ -10,12 +10,12 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-for dirname, _, filenames in os.walk(r"C:\Users\Deep_\Downloads\Kaggle\India_GW\Data"):
+for dirname, _, filenames in os.walk(r"\India_GW\Data"): #Replace your data directory
     for filename in filenames:
         print(os.path.join(dirname,filename))
         
 #Read the data
-df = pd.read_csv(r"C:\Users\Deep_\Downloads\Kaggle\India_GW\Data\Dynamic_2017_2_0.csv", index_col=0)
+df = pd.read_csv(r"\India_GW\Data\Dynamic_2017_2_0.csv", index_col=0) #Replace your data directory
 
 print(df.isna().sum())
 
